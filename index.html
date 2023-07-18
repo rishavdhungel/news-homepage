@@ -11,9 +11,10 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     body{
-      margin: 50px;
+      margin: 20px;
     }
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center;
+    margin-top: 20px; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
     .navbar{
@@ -36,9 +37,12 @@
     .gridContainer{
       display: grid;
       margin-top: 20px;
-      grid-template-columns: 1.5fr 1.5fr 1fr;
-      grid-template-rows: 1.5 fr 1.5fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
+    }
+
+    .gridItems{
+      margin-top: 5px;
     }
     
 
@@ -54,19 +58,27 @@
       grid-row: span 3;
       background-color: hsl(240, 100%, 5%);
       color: white;
-      padding: 20px;
-      height: fit-content;
+      padding: 50px;
+      margin-bottom: 50px;
+    
     }
     .item-3{
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       height: fit-content;
       padding: 10px;
     }
     .item-4{
-      padding: 30px;
     }
     .article2{
       display: flex;
+      flex-wrap: wrap;
+    }
+    .article2 span, h2{
+      margin-left: 10px;
+      display: block;
+      margin-top: 5px;
+      
+
     }
 
     .article2 img{
@@ -76,12 +88,21 @@
 
     .readbtn{
       padding:20px;
-      background-color: hsl(35, 77%, 62%);
+      background-color: hsl(35, 85%, 51%);
       color:white;
       width: 150px;
       border: solid 1px white;
     }
+
+    .article2no{
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: grey;
+    }
     
+    h2:hover{
+      color: hsl(35, 77%, 62%);
+    }
   </style>
 </head>
 <body>
@@ -142,29 +163,39 @@
     <div class="gridItems item-5">
         <div class="article2">
           <img src="images/image-retro-pcs.jpg" />
-          <span>01</span><br>
-          <h3>Reviving Retro PCs</h3>
-          <p>What happens when old PCs are given modern upgrades?</p>
+          <div>
+          <span class="article2no">01</span>
+          <h2>Reviving Retro PCs</h2>
+          <span>What happens when old PCs are given modern upgrades?</span>
+          </div>
       </div>
     </div>
     
     <div class="gridItems item-6">      
       <div class="article2">
         <img src="images/image-top-laptops.jpg" />
-        <span>02</span>
-        <span>Top 10 Laptops of 2022</span>
+        <div>
+        <span class="article2no">02</span>
+        <h2>Top 10 Laptops of 2022</h2>
         <span>Our best picks for various needs and budgets.</span>
+        </div>
       </div>
     </div>
+
+
+    
 
     <div class="gridItems item-7"> 
       <div class="article2">
           <img src="images/image-gaming-growth.jpg" />
-          <span>03</span>
-          <span>The Growth of Gaming</span>
-          <span>How the pandemic has sparked fresh opportunities.</span>
+          <div>
+            <span class="article2no">03</span>
+            <h2>The Growth of Gaming</h2>
+            <span>How the pandemic has sparked fresh opportunities.</span>
+          </div>
       </div>
     </div>
+
   </div>
   
   <div class="attribution">
