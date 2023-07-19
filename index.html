@@ -10,6 +10,13 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    :root{
+      --softOrange:hsl(35,77%,62%);
+      --softRed:hsl(5,85%,63%);
+      --offWhite:hsl(236,13%,42%);
+      --darkblue:hsl(240, 95%, 8%);
+    }
+
     body{
       margin: 20px;
     }
@@ -56,17 +63,23 @@
 
     .item-2{
       grid-row: span 3;
-      background-color: hsl(240, 100%, 5%);
+      background-color: var(--darkblue);
       color: white;
       padding: 50px;
       margin-bottom: 50px;
     
     }
+    .item-2 h1{
+      color: var(--softOrange);
+    }
     .item-3{
       font-size: 1.4rem;
       height: fit-content;
       padding: 10px;
+      color: var(--darkblue);
+
     }
+  
     .item-4{
     }
     .article2{
@@ -88,9 +101,9 @@
 
     .readbtn{
       padding:20px;
-      background-color: hsl(35, 85%, 51%);
+      background-color: var(--softRed);
       color:white;
-      width: 150px;
+      width: 250px;
       border: solid 1px white;
     }
 
@@ -157,7 +170,7 @@
       We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
       But is it really fulfilling its promise?
       </p>
-      <button class="readbtn">Read more</button>
+      <button class="readbtn">READ MORE</button>
     </div>
 
     <div class="gridItems item-5">
@@ -180,10 +193,7 @@
         <span>Our best picks for various needs and budgets.</span>
         </div>
       </div>
-    </div>
-
-
-    
+    </div>   
 
     <div class="gridItems item-7"> 
       <div class="article2">
@@ -195,7 +205,6 @@
           </div>
       </div>
     </div>
-
   </div>
   
   <div class="attribution">
